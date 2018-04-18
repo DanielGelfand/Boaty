@@ -1,4 +1,4 @@
-# Boaty :boat: :speedboat: :sailboat:
+# Boaty :boat: :speedboat: :sailboat: -- Daniel Gelfand, Tim Marder, Maxwell Vale
 
 ##  :sweat_drops: Step 1 :sweat_drops:
 #### Create Deque interface.
