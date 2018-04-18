@@ -1,4 +1,4 @@
-# Boaty
+# Boaty :boat: :speedboat: :sailboat:
 
 ## Step 1
 Create Deque interface
