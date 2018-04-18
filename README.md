@@ -1,10 +1,10 @@
 # Boaty :boat: :speedboat: :sailboat:
 
-## Step 1
+##  :sweat_drops: Step 1 :sweat_drops:
 Create Deque interface
 
-## Step 2
+## :sweat_drops: Step 2 :sweat_drops:
 Implement the methods specified by the Deque interface.
 
-## Step 3
+## :sweat_drops: Step 3 :sweat_drops:
 Profit.
