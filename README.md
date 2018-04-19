@@ -1,5 +1,7 @@
 # Boaty :boat: :speedboat: :sailboat: -- Daniel Gelfand, Tim Marder, Maxwell Vale
 
+![](https://github.com/DanielGelfand/Boaty/blob/master/deque.png)
+http://www.java2novice.com/data-structures-in-java/queue/double-ended-queue/
 ##  :sweat_drops: Step 1 :sweat_drops:
 #### Create Deque interface.
 
