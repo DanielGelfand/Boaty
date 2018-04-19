@@ -12,8 +12,11 @@
 4. pollLast()
 5. peekFirst()
 6. peekLast()
+
+Methods will be written one at a time using the interface as a guide and compilability will be ensured.
+
 ## :sweat_drops: Step 3 :sweat_drops:
-#### Profit. :moneybag:
+#### Test. Test. Test. Profit. :moneybag:
 
 ## Why an ArrayList based architecture?
 ArrayList methods closely resemble the necessary methods needs for a deque.
