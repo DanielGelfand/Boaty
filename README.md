@@ -32,4 +32,4 @@ and the size issues of arrays make it the best option for Boaty.
 2. Write Deque interface.
 3. Write Deque methods in QQKachoo with plenty of comments. ArrayList methods will be used for this lab.
 4. Test all the methods.
-5. Update README.md with anythign notable.
+5. Update README.md with anything notable.
