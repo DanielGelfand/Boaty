@@ -27,7 +27,7 @@ The handy ArrayList methods, in addition to automatic resizing, make ArrayList a
 Although an O(n) runtime will be encountered during element shifts, the ease of use in contrast with the pointers of LLNodes
 and the size issues of arrays make it the best option for Boaty.
 
-##Development Plan
+## Development Plan
 1. Select methods for Deque.
 2. Write Deque interface.
 3. Write Deque methods in QQKachoo with plenty of comments. ArrayList methods will be used for this lab.
