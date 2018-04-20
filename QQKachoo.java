@@ -1,5 +1,10 @@
 /*** TEAM BOATY ***/
-/* Tim Marder, Dan Gelfand, Maxwell Vale */
+/*
+Tim Marder, Dan Gelfand, Maxwell Vale
+APCS2 pd02
+lab02 -- All Hands on Deque!
+2018-04-20
+*/
 
 /**********
 _~
@@ -18,12 +23,11 @@ public class QQKachoo<Card> implements Deque<Card> {
   // Utilizes an ArrayList to implement the Deque interface
   ArrayList<Card> deck;
 
-
   // default constructor
   public QQKachoo() {
-
-    // instantiate the ArrayList
-    deck = new ArrayList<Card>();
+	  
+  // instantiate the ArrayList
+	deck = new ArrayList<Card>();
 
   }
 
@@ -58,6 +62,7 @@ public class QQKachoo<Card> implements Deque<Card> {
 
   // Removes and returns the first element of the ArrayList
   public Card pollFirst() {
+	  
     if (deck.size() == 0) {
       return null;
     }
@@ -67,10 +72,12 @@ public class QQKachoo<Card> implements Deque<Card> {
 
   // Removes and returns the last element of the ArrayList
   public Card pollLast() {
+	  
     if(deck.size() == 0) {
       return null;
     }
     return deck.remove(deck.size() - 1);
+	
 
   }
 
@@ -94,7 +101,9 @@ public class QQKachoo<Card> implements Deque<Card> {
   /* ~~~~~ isEmpty Method ~~~~~ */
 
   public boolean isEmpty() {
+	  
     return deck.size() == 0;
+	
   }
 
   /** END DEQUE INTERFACE IMPLEMENTATION **/
