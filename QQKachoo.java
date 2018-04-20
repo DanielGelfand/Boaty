@@ -2,7 +2,7 @@
 /* Tim Marder, Dan Gelfand, Maxwell Vale */
 
 /**********
-    _~
+_~
 _~ )_)_~
 )_))_))_)
 _!__!__!_
@@ -15,20 +15,27 @@ import java.util.ArrayList;
 
 public class QQKachoo<Card> implements Deque<Card> {
 
+  // Utilizes an ArrayList to implement the Deque interface
   ArrayList<Card> deck;
 
 
-  // constructor
+  // default constructor
   public QQKachoo() {
 
+    // instantiate the ArrayList
     deck = new ArrayList<Card>();
 
   }
 
   /** Implementation of the Deque Methods **/
 
-  /* ~~~~~ "Add" Methods ~~~~~ */
+  /* ~~~~~ "Add" Methods ~~~~~
+   * Uses the add() methods of ArrayList
+   * Adds element at the beginning or end
+   */
 
+  // Adds element at the beginning of the Deque
+  // Returns true if the add is successful and false otherwise
   public boolean offerFirst(Card e) {
 
     deck.add(0,e);
@@ -36,31 +43,41 @@ public class QQKachoo<Card> implements Deque<Card> {
 
   }
 
+  // Adds element to the end of the Deque
+  // Returns true if the add is successful and false otherwise
   public boolean offerLast(Card e) {
 
     return deck.add(e);
 
   }
 
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* ~~~~~ "Remove" Methods ~~~~~
+   * Use the remove() method of ArrayList
+   * Removes either the first or last element
+   */
 
-  /* ~~~~~ "Remove" Methods ~~~~~ */
-
+  // Removes and returns the first element of the ArrayList
   public Card pollFirst() {
-
+    if (deck.size() == 0) {
+      return null;
+    }
     return deck.remove(0);
 
   }
 
+  // Removes and returns the last element of the ArrayList
   public Card pollLast() {
-
+    if(deck.size() == 0) {
+      return null;
+    }
     return deck.remove(deck.size() - 1);
 
   }
 
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-  /* ~~~~~ "Get" Methods ~~~~~ */
+  /* ~~~~~ "Get" Methods ~~~~~
+   * Uses the get() method of ArrayList
+   * retrieve (without removing) either the first or last element
+   */
 
   public Card peekFirst() {
 
@@ -74,79 +91,64 @@ public class QQKachoo<Card> implements Deque<Card> {
 
   }
 
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* ~~~~~ isEmpty Method ~~~~~ */
+
+  public boolean isEmpty() {
+    return deck.size() == 0;
+  }
+
+  /** END DEQUE INTERFACE IMPLEMENTATION **/
+
 
   public String toString() {
 
+    // Uses the toString of the ArrayList to print the contents
     return deck.toString();
 
   }
 
-
-  public static void main (String[] args) {
-
-    Deque<String> test = new QQKachoo<String>();
-
-    test.offerFirst("hey");
-    test.offerLast("sup");
-    test.offerFirst("bye");
-    test.offerLast("no");
-    test.offerFirst("thanks");
-    test.offerLast("cool");
-
-    System.out.println(test);
-
-    System.out.println("First element: " + test.peekFirst()); // thanks
-    System.out.println("Last element: " + test.peekLast()); // cool
-
-    System.out.println("Removing " + test.pollFirst() + "..."); // thanks
-    System.out.println("Removing " + test.pollLast() + "..."); // cool
-    System.out.println(test);
-
-  } // end main method
-
-/*
+  /*
 
 
-                               _..__                    .
-             ____...--...__.-''     ''-.         ....---:
-       .--'''             ''-.          '.              '.
-     .'                       :_._        :      __..--'''.
-    :            ___        .'    '--..--'            _.-''-..   _.-
-     '-.___..--''   '''---''                       .-'    .' :"":
-                      .._                               .'  :   :
-                      :  '"-.                         .'   :     :
-                      .:     '-.                          :      :
-                      . :       '.
-                      .  :        '.
-                      .   :       _ '.
-                       .   :   .-" :  :
-                       .    :-'   :    :
-                       .  .'$$bn.:      :
-                        .'   "**:        '.
-                       :_      :          :.
-                     .'$$$$Mnn.'.          :.
-                    .'      "": :          : .
-                   :__       :   :         '. .
-                  :$$$$$NNnnn:   :           : .
-                .:       """:    '.           : .
-               .:           :     :           '. .
-              .:...__      .'     :            :   .
-            . .'***##nnnnnn:      :             :   .
-           .  :      """"" :      '.            :     .
-          .  .'           .'       :            '.     .
-        .    :MMMnnnccccnn:        :             :       .
-       .    :      """""".'.       :             :        .
-     .     .'            :  .       :             :         .
-    .      :$$$$$NNnnnnnn:  .       :           __:           .
+  _..__                    .
+  ____...--...__.-''     ''-.         ....---:
+  .--'''             ''-.          '.              '.
+  .'                       :_._        :      __..--'''.
+  :            ___        .'    '--..--'            _.-''-..   _.-
+  '-.___..--''   '''---''                       .-'    .' :"":
+  .._                               .'  :   :
+  :  '"-.                         .'   :     :
+  .:     '-.                          :      :
+  . :       '.
+  .  :        '.
+  .   :       _ '.
+  .   :   .-" :  :
+  .    :-'   :    :
+  .  .'$$bn.:      :
+  .'   "**:        '.
+  :_      :          :.
+  .'$$$$Mnn.'.          :.
+  .'      "": :          : .
+  :__       :   :         '. .
+  :$$$$$NNnnn:   :           : .
+  .:       """:    '.           : .
+  .:           :     :           '. .
+  .:...__      .'     :            :   .
+  . .'***##nnnnnn:      :             :   .
+  .  :      """"" :      '.            :     .
+  .  .'           .'       :            '.     .
+  .    :MMMnnnccccnn:        :             :       .
+  .    :      """""".'.       :             :        .
+  .     .'            :  .       :             :         .
+  .      :$$$$$NNnnnnnn:  .       :           __:           .
   .       .'       """"".'   .      :   ....--""                .
-.          """"":.------:    .       """    ::                    .
-----____       ::             .       _______::...--------""""""""/
-\       """"----'____....     ...--"""            ___--""""-- .. /
+  .          """"":.------:    .       """    ::                    .
+  ----____       ::             .       _______::...--------""""""""/
+  \       """"----'____....     ...--"""            ___--""""-- .. /
   \__   ....----""""""  ---""""     """""     """"
-     """...___            _____.....---""""       ____....___
-             """----"""""          ......----""""
+  """...___            _____.....---""""       ____....___
+  """----"""""          ......----""""
 
-             */
+  */
 
 } // end class QQKachoo
