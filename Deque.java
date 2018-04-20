@@ -1,4 +1,5 @@
-/*
+/* TEAM BOATY
+ * Maxwell Vale, Dan Gelfand, Tim Marder
  * Interface for a Deque --> A Double Ended QUEue
  */
 
@@ -25,7 +26,11 @@ public interface Deque<Card> {
   public Card peekFirst();
 
   // Retrieves, but does not remove, the last element of the deque
-  // Returns the tail of the deque or null if empty 
+  // Returns the tail of the deque or null if empty
   public Card peekLast();
+
+  // Checks if the deque is empty
+  // Returns true if empty and false otherwise
+  public boolean isEmpty();
 
 } // end interface Deque
