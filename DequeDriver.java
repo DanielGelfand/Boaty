@@ -1,5 +1,13 @@
 /****** TEAM BOATY ******/
-/** Tim Marder, Dan Gelfand, Maxwell Vale **/
+/*
+Tim Marder, Dan Gelfand, Maxwell Vale
+APCS2 pd02
+lab#02 -- All Hands on Deque!
+2018-04-20
+*/
+
+/*****   DequeDriver Creds to Team StillCold!   *****
+
 /*
 __---~~~~--__                      __--~~~~---__
 `\---~~~~~~~~\\                    //~~~~~~~~---/'
