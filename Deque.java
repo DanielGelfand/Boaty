@@ -1,7 +1,12 @@
 /* TEAM BOATY
  * Maxwell Vale, Dan Gelfand, Tim Marder
- * Interface for a Deque --> A Double Ended QUEue
- */
+ * APCS02 pd02
+ * lab#02 -- All Hands on Deque!
+ * 2018-04-20
+*/
+ 
+// Interface for a Deque --> A Double Ended Queue
+ 
 
 public interface Deque<Card> {
 
