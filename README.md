@@ -28,8 +28,13 @@ Although an O(n) runtime will be encountered during element shifts, the ease of 
 and the size issues of arrays make it the best option for Boaty.
 
 ## Development Plan
-1. Select methods for Deque.:white_check_mark:
+1. Select methods for Deque considering the features that make a deque.:white_check_mark:
+   * Insertion and Removal from front and back is required.
 2. Write Deque interface.:white_check_mark:
 3. Write Deque methods in QQKachoo with plenty of comments. ArrayList methods will be used for this lab.:white_check_mark:
-4. Test all the methods.:white_check_mark:
-5. Update README.md with anything notable.
+   * offerFirst(e) and offerLast(e) will be written using the add methods of ArrayList.
+   * pollFirst() and pollLast()n with the remove method of ArrayList.
+   * peekFirst() and peekLast() with the get() method of ArrayList.
+   * isEmpty() with the size() method of ArrayList.
+4. Test all the methods using a driver file.:white_check_mark:
+5. Update README.md with anything notable.:white_check_mark:
