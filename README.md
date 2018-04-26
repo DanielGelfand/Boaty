@@ -33,7 +33,7 @@ and the size issues of arrays make it the best option for Boaty.
 2. Write Deque interface.:white_check_mark:
 3. Write Deque methods in QQKachoo with plenty of comments. ArrayList methods will be used for this lab.:white_check_mark:
    * offerFirst(e) and offerLast(e) will be written using the add methods of ArrayList.
-   * pollFirst() and pollLast()n with the remove() method of ArrayList.
+   * pollFirst() and pollLast() with the remove() method of ArrayList.
    * peekFirst() and peekLast() with the get() method of ArrayList.
    * isEmpty() with the size() method of ArrayList.
 4. Test all the methods using a driver file.:white_check_mark:
